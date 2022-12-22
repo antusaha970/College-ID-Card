@@ -1,0 +1,79 @@
+p{
+    margin-bottom: 0;
+}
+.card-width{
+    background: #c6d0d3;
+    width: 350px;
+    height: 500px;
+    padding: 12px;
+    position: relative;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+.title-logo{
+    width: 50px;
+    height: 50px;
+}
+.name{
+    color: #323477;
+    font-weight: 700;
+    font-size: 22px;
+    text-align: justify;
+    margin-bottom: 0;
+}
+.second-title p:first-child{
+    color: #f12229;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+.second-title p:last-child{
+    color: #3b8953;
+    font-weight: 700;
+    font-size: 15px;
+    border: 3px solid #161c7d;
+    display: inline-block;
+    padding: 2px 5px;
+    border-radius: 5px;
+    margin-bottom: 0;
+}
+
+#outputImg{
+    width: 200px;
+    height: 200px;
+    border: 2px solid #161c7d;
+    margin-top: 10px;
+}
+
+#studentName{
+    font-weight: 800;
+    color: #1d1d2f;
+}
+.stdInfo{
+    font-weight: 700;
+}
+
+.footer-clr{
+    height: 30px;
+    background: #171e7c;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 0 0 10px 10px;
+    
+}
+
+.sign{
+    color: #fff;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.sign-img{
+    width: 60px;
+    height: 45px;
+    margin-top: -19px;
+    text-align: end;
+    margin-left: 260px;
+}
