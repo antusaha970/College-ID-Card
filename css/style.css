@@ -77,3 +77,30 @@ p{
     text-align: end;
     margin-left: 260px;
 }
+
+.back-side-text{
+    text-align: justify;
+    font-weight: 600;
+    color: #000;
+}
+
+.back-side-text2{
+    margin-top: 20px;
+    font-style: italic;
+    border-bottom: 2px solid #f12229;
+}
+.back-logo{
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.back-name{
+    font-size: 21px;
+}
+
+.email{
+    color: #f12229;
+}
