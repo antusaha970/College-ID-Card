@@ -1,7 +1,8 @@
-p{
+p {
     margin-bottom: 0;
 }
-.card-width{
+
+.card-width {
     background: #c6d0d3;
     width: 350px;
     height: 500px;
@@ -9,25 +10,30 @@ p{
     position: relative;
     border-radius: 10px;
     margin-top: 50px;
+    pointer-events: none;
 }
-.title-logo{
+
+.title-logo {
     width: 50px;
     height: 50px;
 }
-.name{
+
+.name {
     color: #323477;
     font-weight: 700;
     font-size: 22px;
     text-align: justify;
     margin-bottom: 0;
 }
-.second-title p:first-child{
+
+.second-title p:first-child {
     color: #f12229;
     font-weight: 700;
     font-size: 20px;
     margin-bottom: 0;
 }
-.second-title p:last-child{
+
+.second-title p:last-child {
     color: #3b8953;
     font-weight: 700;
     font-size: 15px;
@@ -38,22 +44,24 @@ p{
     margin-bottom: 0;
 }
 
-#outputImg{
+#outputImg {
     width: 200px;
     height: 200px;
     border: 2px solid #161c7d;
     margin-top: 10px;
+    border-radius: 8px;
 }
 
-#studentName{
+#studentName {
     font-weight: 800;
     color: #1d1d2f;
 }
-.stdInfo{
+
+.stdInfo {
     font-weight: 700;
 }
 
-.footer-clr{
+.footer-clr {
     height: 30px;
     background: #171e7c;
     width: 100%;
@@ -61,35 +69,36 @@ p{
     left: 0;
     bottom: 0;
     border-radius: 0 0 10px 10px;
-    
 }
 
-.sign{
+.sign {
     color: #fff;
     font-weight: bold;
     padding-right: 10px;
 }
 
-.sign-img{
+.sign-img {
     width: 60px;
     height: 45px;
     margin-top: -19px;
     text-align: end;
     margin-left: 260px;
+    z-index: 1;
 }
 
-.back-side-text{
+.back-side-text {
     text-align: justify;
     font-weight: 600;
     color: #000;
 }
 
-.back-side-text2{
+.back-side-text2 {
     margin-top: 20px;
     font-style: italic;
     border-bottom: 2px solid #f12229;
 }
-.back-logo{
+
+.back-logo {
     width: 150px;
     height: 150px;
     display: block;
@@ -97,10 +106,20 @@ p{
     margin-top: 5px;
 }
 
-.back-name{
+.back-name {
     font-size: 21px;
 }
 
-.email{
+.email {
     color: #f12229;
+}
+
+#mainCardArea {
+    display: none;
+}
+
+label {
+    margin-bottom: 5px;
+    cursor: pointer;
+    font-size: 20px;
 }

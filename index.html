@@ -7,16 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>College ID card maker</title>
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
+
+    <section id="inputSection">
+        <div class="container">
+            <h2 class="text-center mt-3">Please Enter Your information to get your online college id copy</h2>
+            <label for="studentNameInput">Name</label>
+            <input type="text" id="studentNameInput" placeholder="Your Name" class="form-control">
+            <label for="studentTechInput">Technology</label>
+            <input type="text" id="studentTechInput" class="form-control" placeholder="Ex: CMT/CST/EEE etc.">
+            <label for="studentSessInput">Session</label>
+            <input type="text" id="studentSessInput" class="form-control" placeholder="Ex: 2020-21">
+            <label for="studentIdInput">ID</label>
+            <input type="text" id="studentIdInput" class="form-control" placeholder="Your board roll">
+            <p class="mt-3"><label for="file" style="cursor: pointer;">Upload Image</label></p>
+            <p>
+                <input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)">
+            </p>
+            <button class="btn btn-success mt-3" id="submitBtn">Submit</button>
+            <small class="text-center d-block mt-5 pt-5">Author : <a href="https://www.facebook.com/antusaha970"
+                    target="_blank">Antu Saha</a></small>
+        </div>
+    </section>
+
     <section id="mainCardArea">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 d-flex justify-content-center">
                     <div class="card-width">
                         <div class="title d-flex align-items-center">
                             <img src="images/logo.png" alt="" class="title-logo">
@@ -27,13 +50,13 @@
                             <p>IDENTITY CARD</p>
                         </div>
                         <div class="img-area d-flex justify-content-center">
-                            <img src="images/placeholder.jpeg" alt="" id="outputImg">
+                            <img alt="" id="outputImg">
                         </div>
                         <div class="information text-center">
-                            <h4 id="studentName">Antu Chandra Saha</h4>
-                            <p class="stdInfo">Technology: <span id="studentTech"> Computer</span></p>
-                            <p class="stdInfo">Session: <span id="studentSession" >2020-21</span></p>
-                            <p class="stdInfo">ID: <span id="studentID" >586585</span></p>
+                            <h4 id="studentName"></h4>
+                            <p class="stdInfo">Technology: <span id="studentTech"> </span></p>
+                            <p class="stdInfo">Session: <span id="studentSession"></span></p>
+                            <p class="stdInfo">ID: <span id="studentID"></span></p>
                             <img src="images/sign.png" alt="" class="sign-img">
                         </div>
                         <div class="footer-clr">
@@ -41,9 +64,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 d-flex justify-content-center">
                     <div class="card-width">
-                        <p class="back-side-text">This card is the property of Institute of Computer Science & Technology. The authorized holder may only use it in accordance with the current condition of use.</p>
+                        <p class="back-side-text">This card is the property of Institute of Computer Science &
+                            Technology. The authorized holder may only use it in accordance with the current condition
+                            of use.</p>
                         <p class="back-side-text back-side-text2 text-center">If Found please return this card to:</p>
                         <img src="images/logo.png" alt="" class="back-logo">
                         <h4 class="name text-center back-name">INSTITUTE OF COMPUTER SCIENCE & TECHNOLOGY (ICST)</h4>
@@ -56,24 +81,10 @@
                     </div>
                 </div>
             </div>
-            
-        </div> 
+
+        </div>
     </section>
 
-
-
-
-
-    <!-- <p><input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)" style="display: none;"></p>
-    <p><label for="file" style="cursor: pointer;">Upload Image</label></p>
-    <p><img id="output" width="400" /></p>
-
-    <script>
-        var loadFile = function (event) {
-            var image = document.getElementById('output');
-            image.src = URL.createObjectURL(event.target.files[0]);
-        };
-    </script> -->
     <script src="js/app.js"></script>
 </body>
 
